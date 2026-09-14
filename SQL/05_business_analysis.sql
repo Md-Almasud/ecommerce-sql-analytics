@@ -1,37 +1,37 @@
-Q1. Total Number of Customers
+-- Q1. Total Number of Customers
   
 SELECT COUNT(*) AS total_customers
 FROM customers;
 
-Q2. Total Number of Products
+-- Q2. Total Number of Products
   
 SELECT COUNT(*) AS total_products
 FROM products;
 
-Q3. Total Orders
+-- Q3. Total Orders
   
 SELECT COUNT(*) AS total_orders
 FROM orders;
 
-Q4. Total Revenue
+-- Q4. Total Revenue
   
 SELECT 
     SUM(quantity * unit_price) AS total_revenue
 FROM order_item;
 
-Alternative using payments:
+-- Alternative using payments:
 
 SELECT 
     SUM(amount) AS total_payment
 FROM payments;
 
-Q5. Average Order Value
+-- Q5. Average Order Value
   
 SELECT 
     SUM(quantity * unit_price) / COUNT(DISTINCT order_id) AS average_order_value
 FROM order_item;
 
-Q6. Orders by Status
+-- Q6. Orders by Status
   
 SELECT 
     order_status,
@@ -39,7 +39,7 @@ SELECT
 FROM orders
 GROUP BY order_status;
 
-Q7. Payment Methods
+-- Q7. Payment Methods
   
 SELECT 
     payment_method,
@@ -47,7 +47,7 @@ SELECT
 FROM payments
 GROUP BY payment_method;
 
-Q8. Revenue by Month
+-- Q8. Revenue by Month
   
 SELECT 
     MONTH(order_date) AS month,
@@ -56,7 +56,7 @@ FROM orders
 GROUP BY MONTH(order_date)
 ORDER BY MONTH(order_date);
 
-Q9. Revenue by Category
+-- Q9. Revenue by Category
   
 SELECT
     c.category_name,
@@ -72,7 +72,7 @@ JOIN order_item oi
 GROUP BY c.category_name
 ORDER BY total_revenue DESC;
 
-Q10. Revenue by Product
+-- Q10. Revenue by Product
   
 SELECT 
     p.product_name,
@@ -85,7 +85,7 @@ JOIN order_item oi
 GROUP BY p.product_name
 ORDER BY total_revenue DESC;
 
-Q11. Top-Selling Products
+-- Q11. Top-Selling Products
   
 SELECT
     p.product_name,
@@ -98,7 +98,7 @@ JOIN order_item oi
 GROUP BY p.product_name
 ORDER BY total_quantity DESC;
 
-Q12. Top Customers
+-- Q12. Top Customers
   
 SELECT
     c.customer_name,
@@ -111,7 +111,7 @@ JOIN orders o
 GROUP BY c.customer_name
 ORDER BY total_revenue DESC;
 
-Q13. Customers with Multiple Orders
+-- Q13. Customers with Multiple Orders
   
 SELECT
     c.customer_name,
@@ -127,7 +127,7 @@ HAVING COUNT(o.order_id) > 1
 
 ORDER BY total_orders DESC;
 
-Q14. Average Product Rating
+-- Q14. Average Product Rating
   
 SELECT 
     p.product_name,
@@ -141,7 +141,7 @@ GROUP BY p.product_name
 
 ORDER BY average_rating DESC;
 
-Q15. Stock Available After Sales
+-- Q15. Stock Available After Sales
   
 SELECT
     p.product_name,
@@ -158,7 +158,7 @@ GROUP BY
 
 ORDER BY stock_available ASC;
 
-Q16. Top 5 Highest-Value Orders
+-- Q16. Top 5 Highest-Value Orders
   
 SELECT
     o.order_id,
