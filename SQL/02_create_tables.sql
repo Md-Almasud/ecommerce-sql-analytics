@@ -1,4 +1,4 @@
-2.1 Categories
+-- 2.1 Categories
 -- =====================================================
 -- 2. CATEGORIES TABLE
 -- =====================================================
@@ -8,7 +8,8 @@ CREATE TABLE categories (
     category_name VARCHAR(50) DEFAULT NULL,
     PRIMARY KEY (category_id)
 );
-2.2 Customers
+
+-- 2.2 Customers
 -- =====================================================
 -- 3. CUSTOMERS TABLE
 -- =====================================================
@@ -23,8 +24,9 @@ CREATE TABLE customers (
     signup_date DATE DEFAULT NULL,
     PRIMARY KEY (customer_id)
 );
-2.3 Products
--- =====================================================
+
+-- 2.3 Products
+-- -- =====================================================
 -- 4. PRODUCTS TABLE
 -- =====================================================
 
@@ -39,7 +41,8 @@ CREATE TABLE products (
     FOREIGN KEY (category_id)
         REFERENCES categories(category_id)
 );
-2.4 Orders
+
+-- 2.4 Orders
 -- =====================================================
 -- 5. ORDERS TABLE
 -- =====================================================
@@ -55,7 +58,8 @@ CREATE TABLE orders (
     FOREIGN KEY (customer_id)
         REFERENCES customers(customer_id)
 );
-2.5 Order Items
+
+-- 2.5 Order Items
 -- =====================================================
 -- 6. ORDER ITEM TABLE
 -- =====================================================
@@ -74,7 +78,8 @@ CREATE TABLE order_item (
     FOREIGN KEY (product_id)
         REFERENCES products(product_id)
 );
-2.6 Payments
+
+-- 2.6 Payments
 -- =====================================================
 -- 7. PAYMENTS TABLE
 -- =====================================================
@@ -91,7 +96,8 @@ CREATE TABLE payments (
     FOREIGN KEY (order_id)
         REFERENCES orders(order_id)
 );
-2.7 Reviews
+
+-- 2.7 Reviews
 -- =====================================================
 -- 8. REVIEWS TABLE
 -- =====================================================
