@@ -16,7 +16,7 @@ SELECT * FROM payments;
 
 SELECT * FROM reviews;
 
-To check row counts:
+-- To check row counts:
 
 SELECT COUNT(*) AS total_categories
 FROM categories;
