@@ -1,0 +1,512 @@
+3.1 Categories Data
+-- =====================================================
+-- INSERT CATEGORIES
+-- =====================================================
+
+INSERT INTO categories
+(category_id, category_name)
+VALUES
+(1, 'Electronics'),
+(2, 'Clothing'),
+(3, 'Home & Kitchen'),
+(4, 'Books'),
+(5, 'Beauty & Personal Care'),
+(6, 'Sports & Fitness'),
+(7, 'Grocery'),
+(8, 'Footwear'),
+(9, 'Toys & Games'),
+(10, 'Accessories');
+
+3.2 Customers Data
+
+Your 100-customer INSERT is already correct in structure.
+
+-- =====================================================
+-- INSERT CUSTOMERS
+-- =====================================================
+
+INSERT INTO customers
+(customer_id, customer_name, email_id, phone, city, state, signup_date)
+VALUES
+
+(1, 'MD Almasud', 'almasud@gmail.com', '8448765453',
+'Delhi', 'Delhi', '2026-10-24'),
+
+(2, 'Ruksana', 'ruksana@gmail.com', '9876543210',
+'Delhi', 'Delhi', '2026-08-04'),
+
+(3, 'Priya Singh', 'priya.singh@gmail.com', '9876543211',
+'Bangalore', 'Karnataka', '2026-01-10'),
+
+(4, 'Amit Verma', 'amit.verma@gmail.com', '9876543212',
+'Pune', 'Maharashtra', '2026-01-12'),
+
+(5, 'Neha Gupta', 'neha.gupta@gmail.com', '9876543213',
+'Delhi', 'Delhi', '2026-01-15'),
+
+(6, 'Arjun Mehta', 'arjun.mehta@gmail.com', '9876543214',
+'Ahmedabad', 'Gujarat', '2026-01-18'),
+
+(7, 'Sneha Kapoor', 'sneha.kapoor@gmail.com', '9876543215',
+'Jaipur', 'Rajasthan', '2026-01-20'),
+
+(8, 'Rohan Malhotra', 'rohan.malhotra@gmail.com', '9876543216',
+'Chandigarh', 'Chandigarh', '2026-01-22'),
+
+(9, 'Ananya Rao', 'ananya.rao@gmail.com', '9876543217',
+'Hyderabad', 'Telangana', '2026-01-25'),
+
+(10, 'Vikram Patel', 'vikram.patel@gmail.com', '9876543218',
+'Surat', 'Gujarat', '2026-01-28'),
+
+(11, 'Pooja Nair', 'pooja.nair@gmail.com', '9876543219',
+'Kochi', 'Kerala', '2026-02-01'),
+
+(12, 'Karan Joshi', 'karan.joshi@gmail.com', '9876543220',
+'Indore', 'Madhya Pradesh', '2026-02-03'),
+
+(13, 'Simran Kaur', 'simran.kaur@gmail.com', '9876543221',
+'Amritsar', 'Punjab', '2026-02-05'),
+
+(14, 'Aditya Kumar', 'aditya.kumar@gmail.com', '9876543222',
+'Patna', 'Bihar', '2026-02-08'),
+
+(15, 'Kavya Iyer', 'kavya.iyer@gmail.com', '9876543223',
+'Chennai', 'Tamil Nadu', '2026-02-10'),
+
+(16, 'Manish Yadav', 'manish.yadav@gmail.com', '9876543224',
+'Lucknow', 'Uttar Pradesh', '2026-02-12'),
+
+(17, 'Ishita Roy', 'ishita.roy@gmail.com', '9876543225',
+'Kolkata', 'West Bengal', '2026-02-15'),
+
+(18, 'Sahil Khan', 'sahil.khan@gmail.com', '9876543226',
+'Bhopal', 'Madhya Pradesh', '2026-02-17'),
+
+(19, 'Riya Das', 'riya.das@gmail.com', '9876543227',
+'Guwahati', 'Assam', '2026-02-20'),
+
+(20, 'Nikhil Shah', 'nikhil.shah@gmail.com', '9876543228',
+'Vadodara', 'Gujarat', '2026-02-22'),
+
+(21, 'Tanya Sethi', 'tanya.sethi@gmail.com', '9876543229',
+'Noida', 'Uttar Pradesh', '2026-02-25'),
+
+(22, 'Mohit Bansal', 'mohit.bansal@gmail.com', '9876543230',
+'Gurgaon', 'Haryana', '2026-02-27'),
+
+(23, 'Ayesha Ali', 'ayesha.ali@gmail.com', '9876543231',
+'Delhi', 'Delhi', '2026-03-01'),
+
+(24, 'Varun Reddy', 'varun.reddy@gmail.com', '9876543232',
+'Hyderabad', 'Telangana', '2026-03-03'),
+
+(25, 'Meera Menon', 'meera.menon@gmail.com', '9876543233',
+'Kochi', 'Kerala', '2026-03-05'),
+
+(26, 'Akash Tiwari', 'akash.tiwari@gmail.com', '9876543234',
+'Kanpur', 'Uttar Pradesh', '2026-03-07'),
+
+(27, 'Divya Agarwal', 'divya.agarwal@gmail.com', '9876543235',
+'Jaipur', 'Rajasthan', '2026-03-10'),
+
+(28, 'Yash Thakur', 'yash.thakur@gmail.com', '9876543236',
+'Shimla', 'Himachal Pradesh', '2026-03-12'),
+
+(29, 'Nandini Bose', 'nandini.bose@gmail.com', '9876543237',
+'Kolkata', 'West Bengal', '2026-03-15'),
+
+(30, 'Harsh Jain', 'harsh.jain@gmail.com', '9876543238',
+'Mumbai', 'Maharashtra', '2026-03-18'),
+
+(31, 'Varsha Rani', 'varsha.rani@gmail.com', '9876543239',
+'Ranchi', 'Jharkhand', '2026-03-20'),
+
+(32, 'Abhishek Mishra', 'abhishek.mishra@gmail.com', '9876543240',
+'Varanasi', 'Uttar Pradesh', '2026-03-22'),
+
+(33, 'Nisha Patel', 'nisha.patel@gmail.com', '9876543241',
+'Rajkot', 'Gujarat', '2026-03-25'),
+
+(34, 'Rakesh Kumar', 'rakesh.kumar@gmail.com', '9876543242',
+'Delhi', 'Delhi', '2026-03-27'),
+
+(35, 'Swati Sharma', 'swati.sharma@gmail.com', '9876543243',
+'Ludhiana', 'Punjab', '2026-03-29'),
+
+(36, 'Deepak Singh', 'deepak.singh@gmail.com', '9876543244',
+'Agra', 'Uttar Pradesh', '2026-04-01'),
+
+(37, 'Komal Arora', 'komal.arora@gmail.com', '9876543245',
+'Delhi', 'Delhi', '2026-04-03'),
+
+(38, 'Ravi Saini', 'ravi.saini@gmail.com', '9876543246',
+'Gurgaon', 'Haryana', '2026-04-05'),
+
+(39, 'Shreya Mukherjee', 'shreya.m@gmail.com', '9876543247',
+'Kolkata', 'West Bengal', '2026-04-07'),
+
+(40, 'Gaurav Saxena', 'gaurav.saxena@gmail.com', '9876543248',
+'Lucknow', 'Uttar Pradesh', '2026-04-10'),
+
+(41, 'Muskan Verma', 'muskan.verma@gmail.com', '9876543249',
+'Noida', 'Uttar Pradesh', '2026-04-12'),
+
+(42, 'Aman Gupta', 'aman.gupta@gmail.com', '9876543250',
+'Delhi', 'Delhi', '2026-04-15'),
+
+(43, 'Ritu Singh', 'ritu.singh@gmail.com', '9876543251',
+'Patna', 'Bihar', '2026-04-17'),
+
+(44, 'Saurabh Jain', 'saurabh.jain@gmail.com', '9876543252',
+'Indore', 'Madhya Pradesh', '2026-04-19'),
+
+(45, 'Preeti Sharma', 'preeti.sharma@gmail.com', '9876543253',
+'Pune', 'Maharashtra', '2026-04-21'),
+
+(46, 'Naveen Reddy', 'naveen.reddy@gmail.com', '9876543254',
+'Hyderabad', 'Telangana', '2026-04-23'),
+
+(47, 'Shivani Rao', 'shivani.rao@gmail.com', '9876543255',
+'Bangalore', 'Karnataka', '2026-04-25'),
+
+(48, 'Rohit Das', 'rohit.das@gmail.com', '9876543256',
+'Guwahati', 'Assam', '2026-04-27'),
+
+(49, 'Tanvi Mehta', 'tanvi.mehta@gmail.com', '9876543257',
+'Ahmedabad', 'Gujarat', '2026-04-29'),
+
+(50, 'Kunal Kapoor', 'kunal.kapoor@gmail.com', '9876543258',
+'Chandigarh', 'Chandigarh', '2026-05-01'),
+
+(51, 'Sakshi Nair', 'sakshi.nair@gmail.com', '9876543259',
+'Kochi', 'Kerala', '2026-05-03'),
+
+(52, 'Raj Malhotra', 'raj.malhotra@gmail.com', '9876543260',
+'Mumbai', 'Maharashtra', '2026-05-05'),
+
+(53, 'Aarti Yadav', 'aarti.yadav@gmail.com', '9876543261',
+'Kanpur', 'Uttar Pradesh', '2026-05-07'),
+
+(54, 'Vivek Joshi', 'vivek.joshi@gmail.com', '9876543262',
+'Jaipur', 'Rajasthan', '2026-05-09'),
+
+(55, 'Mansi Shah', 'mansi.shah@gmail.com', '9876543263',
+'Surat', 'Gujarat', '2026-05-11'),
+
+(56, 'Ankit Sinha', 'ankit.sinha@gmail.com', '9876543264',
+'Ranchi', 'Jharkhand', '2026-05-13'),
+
+(57, 'Payal Agarwal', 'payal.agarwal@gmail.com', '9876543265',
+'Bhopal', 'Madhya Pradesh', '2026-05-15'),
+
+(58, 'Sumit Kumar', 'sumit.kumar@gmail.com', '9876543266',
+'Patna', 'Bihar', '2026-05-17'),
+
+(59, 'Radhika Iyer', 'radhika.iyer@gmail.com', '9876543267',
+'Chennai', 'Tamil Nadu', '2026-05-19'),
+
+(60, 'Ashish Roy', 'ashish.roy@gmail.com', '9876543268',
+'Kolkata', 'West Bengal', '2026-05-21'),
+
+(61, 'Pallavi Singh', 'pallavi.singh@gmail.com', '9876543269',
+'Delhi', 'Delhi', '2026-05-23'),
+
+(62, 'Nitin Verma', 'nitin.verma@gmail.com', '9876543270',
+'Noida', 'Uttar Pradesh', '2026-05-25'),
+
+(63, 'Sonia Khan', 'sonia.khan@gmail.com', '9876543271',
+'Lucknow', 'Uttar Pradesh', '2026-05-27'),
+
+(64, 'Rajat Bansal', 'rajat.bansal@gmail.com', '9876543272',
+'Gurgaon', 'Haryana', '2026-05-29'),
+
+(65, 'Isha Kapoor', 'isha.kapoor@gmail.com', '9876543273',
+'Delhi', 'Delhi', '2026-06-01'),
+
+(66, 'Abhinav Sharma', 'abhinav.sharma@gmail.com', '9876543274',
+'Chandigarh', 'Chandigarh', '2026-06-03'),
+
+(67, 'Sanya Mehta', 'sanya.mehta@gmail.com', '9876543275',
+'Pune', 'Maharashtra', '2026-06-05'),
+
+(68, 'Kartik Patel', 'kartik.patel@gmail.com', '9876543276',
+'Ahmedabad', 'Gujarat', '2026-06-07'),
+
+(69, 'Alisha Reddy', 'alisha.reddy@gmail.com', '9876543277',
+'Hyderabad', 'Telangana', '2026-06-09'),
+
+(70, 'Mukul Nair', 'mukul.nair@gmail.com', '9876543278',
+'Kochi', 'Kerala', '2026-06-11'),
+
+(71, 'Rhea Das', 'rhea.das@gmail.com', '9876543279',
+'Guwahati', 'Assam', '2026-06-13'),
+
+(72, 'Tarun Singh', 'tarun.singh@gmail.com', '9876543280',
+'Amritsar', 'Punjab', '2026-06-15'),
+
+(73, 'Sonal Gupta', 'sonal.gupta@gmail.com', '9876543281',
+'Jaipur', 'Rajasthan', '2026-06-17'),
+
+(74, 'Vikas Yadav', 'vikas.yadav@gmail.com', '9876543282',
+'Agra', 'Uttar Pradesh', '2026-06-19'),
+
+(75, 'Rashmi Jain', 'rashmi.jain@gmail.com', '9876543283',
+'Indore', 'Madhya Pradesh', '2026-06-21'),
+
+(76, 'Dev Patel', 'dev.patel@gmail.com', '9876543284',
+'Vadodara', 'Gujarat', '2026-06-23'),
+
+(77, 'Kriti Roy', 'kriti.roy@gmail.com', '9876543285',
+'Kolkata', 'West Bengal', '2026-06-25'),
+
+(78, 'Sameer Khan', 'sameer.khan@gmail.com', '9876543286',
+'Bhopal', 'Madhya Pradesh', '2026-06-27'),
+
+(79, 'Nupur Sethi', 'nupur.sethi@gmail.com', '9876543287',
+'Delhi', 'Delhi', '2026-06-29'),
+
+(80, 'Manav Arora', 'manav.arora@gmail.com', '9876543288',
+'Ludhiana', 'Punjab', '2026-07-01'),
+
+(81, 'Shalini Rao', 'shalini.rao@gmail.com', '9876543289',
+'Bangalore', 'Karnataka', '2026-07-03'),
+
+(82, 'Varun Sharma', 'varun.sharma@gmail.com', '9876543290',
+'Mumbai', 'Maharashtra', '2026-07-05'),
+
+(83, 'Pankaj Kumar', 'pankaj.kumar@gmail.com', '9876543291',
+'Delhi', 'Delhi', '2026-07-07'),
+
+(84, 'Reena Verma', 'reena.verma@gmail.com', '9876543292',
+'Pune', 'Maharashtra', '2026-07-09'),
+
+(85, 'Yuvraj Singh', 'yuvraj.singh@gmail.com', '9876543293',
+'Chandigarh', 'Chandigarh', '2026-07-11'),
+
+(86, 'Aditi Mishra', 'aditi.mishra@gmail.com', '9876543294',
+'Varanasi', 'Uttar Pradesh', '2026-07-13'),
+
+(87, 'Harshit Gupta', 'harshit.gupta@gmail.com', '9876543295',
+'Noida', 'Uttar Pradesh', '2026-07-15'),
+
+(88, 'Rina Patel', 'rina.patel@gmail.com', '9876543296',
+'Surat', 'Gujarat', '2026-07-17'),
+
+(89, 'Ayush Mehta', 'ayush.mehta@gmail.com', '9876543297',
+'Ahmedabad', 'Gujarat', '2026-07-19'),
+
+(90, 'Madhuri Nair', 'madhuri.nair@gmail.com', '9876543298',
+'Kochi', 'Kerala', '2026-07-21'),
+
+(91, 'Siddharth Rao', 'siddharth.rao@gmail.com', '9876543299',
+'Hyderabad', 'Telangana', '2026-07-23'),
+
+(92, 'Anjali Kapoor', 'anjali.kapoor@gmail.com', '9876543300',
+'Delhi', 'Delhi', '2026-07-25'),
+
+(93, 'Ramesh Yadav', 'ramesh.yadav@gmail.com', '9876543301',
+'Lucknow', 'Uttar Pradesh', '2026-07-27'),
+
+(94, 'Kashish Sharma', 'kashish.sharma@gmail.com', '9876543302',
+'Jaipur', 'Rajasthan', '2026-07-29'),
+
+(95, 'Vishal Singh', 'vishal.singh@gmail.com', '9876543303',
+'Patna', 'Bihar', '2026-07-31'),
+
+(96, 'Nikita Roy', 'nikita.roy@gmail.com', '9876543304',
+'Kolkata', 'West Bengal', '2026-08-02'),
+
+(97, 'Suresh Patel', 'suresh.patel@gmail.com', '9876543305',
+'Vadodara', 'Gujarat', '2026-08-04'),
+
+(98, 'Bhavna Jain', 'bhavna.jain@gmail.com', '9876543306',
+'Indore', 'Madhya Pradesh', '2026-08-06'),
+
+(99, 'Rohini Das', 'rohini.das@gmail.com', '9876543307',
+'Guwahati', 'Assam', '2026-08-08'),
+
+(100, 'Keshav Kumar', 'keshav.kumar@gmail.com', '9876543308',
+'Chennai', 'Tamil Nadu', '2026-08-10');
+4. Products Data
+-- =====================================================
+-- INSERT PRODUCTS
+-- =====================================================
+
+INSERT INTO products
+(product_id, product_name, category_id, price, stock_quantity)
+VALUES
+(1, 'Wireless Bluetooth Headphones', 1, 1499.00, 50),
+(2, 'Smartphone 5G', 1, 24999.00, 30),
+(3, 'Laptop 15 inch', 1, 55999.00, 20),
+(4, 'USB-C Fast Charger', 1, 899.00, 100),
+(5, 'Cotton T-Shirt', 2, 599.00, 80),
+(6, 'Men Jeans', 2, 1299.00, 45),
+(7, 'Non-Stick Frying Pan', 3, 999.00, 35),
+(8, 'The Alchemist', 4, 399.00, 60),
+(9, 'Face Wash', 5, 299.00, 75),
+(10, 'Yoga Mat', 6, 699.00, 40);
+
+5. Orders Data
+-- =====================================================
+-- INSERT ORDERS
+-- =====================================================
+
+INSERT INTO orders
+(order_id, customer_id, order_date, order_status, total_amount)
+VALUES
+(1, 2, '2026-08-24', 'Delivered', 2396.00),
+(2, 25, '2026-09-08', 'Delivered', 3796.00),
+(3, 10, '2026-09-09', 'Delivered', 1499.00),
+(4, 15, '2026-09-10', 'Shipped', 2097.00),
+(5, 23, '2026-09-11', 'Delivered', 1998.00),
+(6, 31, '2026-09-12', 'Processing', 55999.00),
+(7, 42, '2026-09-13', 'Delivered', 1995.00),
+(8, 50, '2026-09-14', 'Shipped', 24999.00),
+(9, 61, '2026-09-15', 'Delivered', 3197.00),
+(10, 70, '2026-09-16', 'Processing', 2695.00),
+(11, 83, '2026-09-17', 'Delivered', 2998.00),
+(12, 95, '2026-09-18', 'Shipped', 2595.00),
+(13, 7, '2026-09-19', 'Delivered', 3196.00),
+(14, 18, '2026-09-20', 'Delivered', 2197.00),
+(15, 29, '2026-09-21', 'Processing', 3396.00),
+(16, 36, '2026-09-22', 'Shipped', 1499.00),
+(17, 44, '2026-09-23', 'Delivered', 2895.00),
+(18, 52, '2026-09-24', 'Delivered', 3197.00),
+(19, 67, '2026-09-25', 'Processing', 2096.00),
+(20, 74, '2026-09-26', 'Shipped', 3096.00),
+(21, 81, '2026-09-27', 'Delivered', 1299.00),
+(22, 88, '2026-09-28', 'Delivered', 2096.00),
+(23, 96, '2026-09-29', 'Processing', 2696.00),
+(24, 12, '2026-09-30', 'Shipped', 2098.00),
+(25, 27, '2026-10-01', 'Delivered', 2098.00),
+(26, 55, '2026-10-02', 'Delivered', 1797.00),
+(27, 63, '2026-10-03', 'Processing', 24999.00);
+
+6. Order Item Data
+-- =====================================================
+-- INSERT ORDER ITEMS
+-- =====================================================
+
+INSERT INTO order_item
+(order_item_id, order_id, product_id, quantity, unit_price)
+VALUES
+(1, 1, 5, 4, 599.00),
+(2, 2, 5, 2, 1299.00),
+(3, 2, 6, 2, 599.00),
+(47, 3, 1, 1, 1499.00),
+(48, 4, 5, 2, 599.00),
+(49, 4, 4, 1, 899.00),
+(50, 5, 7, 2, 999.00),
+(51, 6, 3, 1, 55999.00),
+(52, 7, 8, 5, 399.00),
+(53, 8, 2, 1, 24999.00),
+(54, 9, 6, 2, 1299.00),
+(55, 9, 5, 1, 599.00),
+(56, 10, 10, 3, 699.00),
+(57, 10, 9, 2, 299.00),
+(58, 11, 1, 2, 1499.00),
+(59, 12, 5, 3, 599.00),
+(60, 12, 8, 2, 399.00),
+(61, 13, 6, 2, 1299.00),
+(62, 13, 9, 2, 299.00),
+(63, 14, 5, 1, 599.00),
+(64, 14, 6, 1, 1299.00),
+(65, 14, 9, 1, 299.00),
+(66, 15, 6, 2, 1299.00),
+(67, 15, 8, 2, 399.00),
+(68, 16, 1, 1, 1499.00),
+(69, 17, 8, 2, 399.00),
+(70, 17, 10, 3, 699.00),
+(71, 18, 5, 1, 599.00),
+(72, 18, 6, 2, 1299.00),
+(73, 19, 8, 1, 399.00),
+(74, 19, 9, 1, 299.00),
+(75, 19, 10, 2, 699.00),
+(76, 20, 7, 1, 999.00),
+(77, 20, 10, 3, 699.00),
+(78, 21, 6, 1, 1299.00),
+(79, 22, 8, 1, 399.00),
+(80, 22, 9, 1, 299.00),
+(81, 22, 10, 2, 699.00),
+(82, 23, 7, 1, 999.00),
+(83, 23, 9, 1, 299.00),
+(84, 23, 10, 2, 699.00),
+(85, 24, 1, 1, 1499.00),
+(86, 24, 5, 1, 599.00),
+(87, 25, 1, 1, 1499.00),
+(88, 25, 5, 1, 599.00),
+(89, 26, 8, 1, 399.00),
+(90, 26, 10, 2, 699.00),
+(91, 27, 2, 1, 24999.00);
+
+7. Payments Data
+-- =====================================================
+-- INSERT PAYMENTS
+-- =====================================================
+
+INSERT INTO payments
+(payment_id, order_id, payment_date, amount, payment_method, payment_status)
+VALUES
+(1, 1, '2026-08-24', 2396.00, 'UPI', 'Completed'),
+(2, 2, '2026-09-08', 3796.00, 'UPI', 'Completed'),
+(3, 3, '2026-09-09', 1499.00, 'Credit Card', 'Completed'),
+(4, 4, '2026-09-10', 2097.00, 'Debit Card', 'Completed'),
+(5, 5, '2026-09-11', 1998.00, 'UPI', 'Completed'),
+(6, 6, '2026-09-12', 55999.00, 'Credit Card', 'Pending'),
+(7, 7, '2026-09-13', 1995.00, 'UPI', 'Completed'),
+(8, 8, '2026-09-14', 24999.00, 'Debit Card', 'Completed'),
+(9, 9, '2026-09-15', 3197.00, 'UPI', 'Completed'),
+(10, 10, '2026-09-16', 2695.00, 'Credit Card', 'Pending'),
+(11, 11, '2026-09-17', 2998.00, 'UPI', 'Completed'),
+(12, 12, '2026-09-18', 2595.00, 'Debit Card', 'Completed'),
+(13, 13, '2026-09-19', 3196.00, 'UPI', 'Completed'),
+(14, 14, '2026-09-20', 2197.00, 'Credit Card', 'Completed'),
+(15, 15, '2026-09-21', 3396.00, 'UPI', 'Pending'),
+(16, 16, '2026-09-22', 1499.00, 'Debit Card', 'Completed'),
+(17, 17, '2026-09-23', 2895.00, 'UPI', 'Completed'),
+(18, 18, '2026-09-24', 3197.00, 'Credit Card', 'Completed'),
+(19, 19, '2026-09-25', 2096.00, 'UPI', 'Pending'),
+(20, 20, '2026-09-26', 3096.00, 'Debit Card', 'Completed'),
+(21, 21, '2026-09-27', 1299.00, 'UPI', 'Completed'),
+(22, 22, '2026-09-28', 2096.00, 'Credit Card', 'Completed'),
+(23, 23, '2026-09-29', 2696.00, 'UPI', 'Pending'),
+(24, 24, '2026-09-30', 2098.00, 'Debit Card', 'Completed'),
+(25, 25, '2026-10-01', 2098.00, 'UPI', 'Completed'),
+(26, 26, '2026-10-02', 1797.00, 'Credit Card', 'Completed'),
+(27, 27, '2026-10-03', 24999.00, 'UPI', 'Pending');
+
+8. Reviews Data
+-- =====================================================
+-- INSERT REVIEWS
+-- =====================================================
+
+INSERT INTO reviews
+(review_id, customer_id, rating, product_id)
+VALUES
+(1, 2, 3, 5),
+(2, 3, 5, 10),
+(3, 4, 4, 1),
+(4, 5, 5, 2),
+(5, 6, 3, 3),
+(6, 7, 4, 4),
+(7, 8, 5, 6),
+(8, 9, 4, 7),
+(9, 10, 3, 8),
+(10, 11, 5, 9),
+(11, 12, 4, 1),
+(12, 13, 5, 2),
+(13, 14, 3, 3),
+(14, 15, 4, 4),
+(15, 16, 5, 5),
+(16, 17, 4, 6),
+(17, 18, 5, 7),
+(18, 19, 3, 8),
+(19, 20, 4, 9),
+(20, 21, 5, 10),
+(21, 22, 4, 1),
+(22, 23, 3, 2),
+(23, 24, 5, 5),
+(24, 25, 4, 6),
+(25, 26, 5, 7),
+(26, 27, 4, 10);
